@@ -17,7 +17,6 @@ async fn dance() {
 }
 
 async fn learn_and_sing() {
-    futures::
     let song = learn_song().await;
     sing_song(song).await;
 }
