@@ -1,5 +1,3 @@
-use std::{thread, time};
-
 use futures::executor::block_on;
 
 async fn hello_world() {
@@ -7,7 +5,6 @@ async fn hello_world() {
 }
 
 async fn learn_song() -> String {
-    thread::sleep(time::Duration::from_secs(5));
     "learn song".to_string()
 }
 
@@ -20,6 +17,7 @@ async fn dance() {
 }
 
 async fn learn_and_sing() {
+    futures::
     let song = learn_song().await;
     sing_song(song).await;
 }
