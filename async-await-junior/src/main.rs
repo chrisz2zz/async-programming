@@ -18,7 +18,12 @@ async fn dance() {
 
 async fn learn_and_sing() {
     let song = learn_song().await;
+    // futures::pending!(); //验证异步
     sing_song(song).await;
+
+    println!("1111");
+    println!("2222");
+    println!("3333");
 }
 
 async fn async_main() {
